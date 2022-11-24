@@ -97,14 +97,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://172.31.37.81:9980/mithuntechnologies/repository/citibank-release/</url>
+	      <name>shravan nexus release repository</name>
+	      <url>http://13.126.77.111:8081/repository/nexus-maven-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://172.31.37.81:9980/mithuntechnologies/repository/citibank-snapshot/</url>
+	      <name>shravan nexus snapshot repository</name>
+	      <url>http://13.126.77.111:8081/repository/nexus-maven-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
