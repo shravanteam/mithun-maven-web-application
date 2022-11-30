@@ -34,9 +34,9 @@ try{
     currentBuild.result = "FAILURE"
     }
     finally{
-    sendSlackNotification(currentBuild.result)
+    sendSlackNotifications(currentBuild.result)
     }
-} // node closing
+}//node closing
 
 // Function for slack
 def sendSlackNotifications(String buildStatus = 'STARTED') {
