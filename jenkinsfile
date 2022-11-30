@@ -11,6 +11,7 @@ try{
    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
    
     stage('checkoutcode'){
+    sendSlackNotifications("STARTED")
         git branch: 'development', credentialsId: '7a65982b-bd0b-4f18-9368-cd9649f5f72a', url: 'https://github.com/shravanteam/mithun-maven-web-application.git'
     }
     stage('build'){
