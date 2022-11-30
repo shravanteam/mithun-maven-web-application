@@ -41,7 +41,7 @@ try{
 // Function for slack
 def sendSlackNotifications(String buildStatus = 'STARTED') {
   // build status of null means successful
-  buildStatus =  buildStatus ?: 'SUCCESS'
+  buildStatus = buildStatus ?: 'SUCCESS'
 
   // Default values
   def colorName = 'RED'
