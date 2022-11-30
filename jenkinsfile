@@ -30,7 +30,7 @@ try{
     }
     */
     }
-    catch{
+    catch(e){
     currentBuild.result = "FAILURE"
     }
     finally{
